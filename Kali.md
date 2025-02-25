@@ -35,7 +35,7 @@ I also prefer the terminal emulator prompt to be on a single line:
 ## Install and enable firewall
 
 ```bash
-sudo apt ufw && sudo ufw enable
+sudo apt update && sudo apt install ufw && sudo ufw enable
 ```
 
 
