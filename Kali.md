@@ -18,7 +18,7 @@ The Kali Linux installer will automatically add Guest Additions.
 
 ## Kali HiDPI mode
 
-If using a HiDPI monitor, text may appear too small. Run `kali-hidpi-mode` to enable a 2x scaling.
+If using a HiDPI monitor, text may appear too small. Run `kali-hidpi-mode` to enable a 2x scaling and reboot to ensure it's fully applied.
 
 
 ## Kali tweaks
@@ -50,11 +50,13 @@ sudo apt update && sudo apt full-upgrade
 
 Go to `Power Manager > Display` and set the parameters to never.
 
+`Settings > Session and Startup > Application Autostart > Screen Locker` untick to disable
+
 
 ## Install favourite packages
 
 ```bash
-sudo apt install flameshot ffmpeg ghostwriter hollywood
+sudo apt install flameshot ffmpeg ghostwriter gobuster
 ```
 
 
@@ -88,3 +90,16 @@ export HISTSIZE=50
 export SAVEHIST=0
 ```
 
+
+## Burpsuite settings (optional)
+
+When intercepting web traffic, Burp will raise the window and this can cause focus to jump to that window. To stop this in Kali go to `Window Manager Tweaks > When a window raises itself > Do nothing`
+
+Then specifically within the program if using a 4k high resolution monitor, I've found it best to leave scaling at 1.0 and increase the font size:
+
+```
+User Interface > Display > Font Size 24
+User Interface > Display > Theme Dark
+Scaling > Configure scaling settings > use system DPI settings > scale factor 1.0
+User interface > Message editor > HTTP message display 24pt font
+```
