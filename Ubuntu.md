@@ -56,7 +56,7 @@ gsettings set org.gnome.desktop.session idle-delay 0
 ## Install favourite packages and snaps
 
 ```bash
-sudo apt install git flameshot vim cherrytree ffmpeg ghostwriter
+sudo apt install git flameshot vim cherrytree ffmpeg ghostwriter thunderbird
 ```
 Update the favourite pinned apps:
 ```bash
@@ -67,3 +67,8 @@ gsettings set org.gnome.shell favorite-apps "['firefox_firefox.desktop', 'org.gn
 ## Set a desktop wallpaper (optional)
 
 User dwt1 on gitlab has a collection of [wallpapers](https://gitlab.com/dwt1/wallpapers) that may be of interest.
+
+
+## Import RSS / browser favourites
+
+Ensure to import any important RSS feeds or browser favourites.
